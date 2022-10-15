@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let password = document.getElementById("password").value;
         if (email && password){
             modal.style.display = "flex";
-            document.querySelector("#user_mail").innerHTML = `Please confirm account creation for ${email}`;
+            document.querySelector("#user_mail").innerText = `Please confirm account creation for ${email}`;
         }
     })
 
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         modal.style.display = "none";
         document.querySelector("form").style.display = "none";
         document.querySelector(".greetings").style.display = "flex";
-        document.getElementById("greetings").innerHTML = `Hello there, ${email}`;
+        document.getElementById("greetings").innerText = `Hello there, ${email}`;
 
     });
 
